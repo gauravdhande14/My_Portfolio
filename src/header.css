@@ -1,0 +1,97 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background-color: #008FDB;
+    position: sticky;
+    top: 0px;
+  }
+  
+  .logo {
+    margin-left: 150px;
+    font-family: "Lilita One", sans-serif;
+    font-size: 35px;
+    color: #f8f8f8;
+    cursor: pointer;
+  }
+  
+  .logo:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    padding: 10px 30px;
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #f8f8f8;
+    color: #252525;
+  }
+  
+  li, .nav-links a {
+    font-size: 20px;
+    color: #f8f8f8;
+    text-decoration: none;
+  }
+  
+  header button {
+    padding: 11px 30px;
+    border-radius: 30px;
+    background-color: #f8f8f8;
+    color: #252525;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  header button:hover {
+    background-color: rgb(194, 194, 194);
+  }
+
+  
+
+  @media screen and (max-width: 500px) {
+    header {
+        align-items: center;
+        text-align: center;
+        padding: 5px 0;
+        height: auto;
+    }
+    .logo {
+        margin-left: 0;
+        font-size: 24px;
+    }
+    
+    .nav-links {
+        gap: 2px;
+        padding: 5px 0;
+    }
+    .nav-links li a {
+      display: block;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    header button {
+        margin: 3px 0;
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+
+}
